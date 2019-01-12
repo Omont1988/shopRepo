@@ -1,0 +1,40 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1546106912902" stop="1546106912902">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1546106912902" status="broken" stop="1546106912902">
+      <name>TestLogin</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>usr/local/lib/python3.6/site-packages/pluggy/__init__.py:617: in __call__
+    return self._hookexec(self, self._nonwrappers + self._wrappers, kwargs)
+usr/local/lib/python3.6/site-packages/pluggy/__init__.py:222: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+usr/local/lib/python3.6/site-packages/pluggy/__init__.py:216: in &lt;lambda&gt;
+    firstresult=hook.spec_opts.get('firstresult'),
+usr/local/lib/python3.6/site-packages/_pytest/python.py:200: in pytest_pycollect_makeitem
+    res = list(collector._genfunctions(name, obj))
+usr/local/lib/python3.6/site-packages/_pytest/python.py:378: in _genfunctions
+    self.ihook.pytest_generate_tests(metafunc=metafunc)
+usr/local/lib/python3.6/site-packages/pluggy/__init__.py:617: in __call__
+    return self._hookexec(self, self._nonwrappers + self._wrappers, kwargs)
+usr/local/lib/python3.6/site-packages/pluggy/__init__.py:222: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+usr/local/lib/python3.6/site-packages/pluggy/__init__.py:216: in &lt;lambda&gt;
+    firstresult=hook.spec_opts.get('firstresult'),
+usr/local/lib/python3.6/site-packages/_pytest/python.py:125: in pytest_generate_tests
+    metafunc.parametrize(*marker.args, **marker.kwargs)
+usr/local/lib/python3.6/site-packages/_pytest/python.py:790: in parametrize
+    argnames, argvalues, self.function, self.config)
+usr/local/lib/python3.6/site-packages/_pytest/mark/structures.py:101: in _for_parametrize
+    for x in argvalues]
+E   TypeError: 'function' object is not iterable</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
